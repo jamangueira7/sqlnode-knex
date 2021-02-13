@@ -7,12 +7,18 @@ module.exports = {
         return res.json(users);
     },
 
-    async create (req, res) {
-        const { username } = req.body;
+    async create (req, res, next) {
+        try {
 
-        const user = await knex('users').insert({ username });
+            const { username } = req.body;
 
-        return res.json(user);
+            await knex('users').insert({ username });
+
+            return res.status(201).send();
+        } catch (err) {
+
+            next(err);
+        }
     },
 
 }
