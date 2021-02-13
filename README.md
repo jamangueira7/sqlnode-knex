@@ -8,7 +8,8 @@
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-rotas">Rotas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;
-  </p>
+</p>
+
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=7159c1&labelColor=000000" alt="PRs welcome!" />
 
@@ -16,18 +17,18 @@
 
 <br>
 
-## API rest mostrar rodadas do Brasileirão
+## API Rest - Masterclass #13
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/) - v14.4.0
-- [Mongo](https://www.mongodb.com/)
+- [Postgres](https://www.postgresql.org/)
 - [Docker](https://www.docker.com/) - 19.03.8
 - [Yarn](https://yarnpkg.com/) - 1.22.4
 - [Npm](https://www.npmjs.com/) - 6.14.5
-- [Sequelize](https://sequelize.org/) - 6.5.0
+- [Next](https://nextjs.org/docs) - 0.21.17
 
 
 ## 💻 Projeto

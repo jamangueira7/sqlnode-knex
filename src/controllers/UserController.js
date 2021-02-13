@@ -38,4 +38,21 @@ module.exports = {
         }
     },
 
+    async delete (req, res, next) {
+        try {
+
+            const { userId } = req.params;
+
+            await knex('users')
+                .where({ id: userId })
+                .del();
+
+            return res.send();
+        } catch (err) {
+
+            next(err);
+        }
+    },
+
+
 }
