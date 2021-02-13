@@ -79,30 +79,15 @@ Retorno
 ]
 ```
 
-- **`POST /users/:userId/addresses`**: Rota para cadastros de endereços de usuarios;
+- **`PUT /users/:userId`**: Rota para alterar usuarios;
 Envio
 ```
 {
-    "zipcode" :"00125-000",
-    "street" :"Rua Y",
-    "number" :236
-}
-```
- 
- Retorno
- ```
-{
-    "id": 2,
-    "zipcode": "00125-000",
-    "street": "Rua Y",
-    "number": 236,
-    "user_id": 2,
-    "updatedAt": "2021-02-12T22:43:18.827Z",
-    "createdAt": "2021-02-12T22:43:18.827Z"
+    "username": "Bruna"
 }
 ```
 
-- **`GET /users/:userId/addresses`**: Rota para listagem de endereços de usuarios;
+- **`DELETE /users/:userId`**: Rota para listagem de endereços de usuarios;
 Retorno
 ```
 {
