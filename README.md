@@ -40,13 +40,14 @@ Esse projeto foi feito com a aula da Rocketseat Masterclass #13 [link](https://w
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Rode o comando "docker run --name mongodb -p 27017:27017 -d -t mongo"
-- docker ps para ver se o Mongo está rodando no Docker.
-- Caso não esteja docker start mongo para rodar.
-- Entre na pasta do projeto e rode o comando "yarn install" para instalar as dependências.
-- Rode yarn sequelize db:create para criar o banco de dados;
-- Rode yarn sequelize db:migrate para executar as migrations;
-- Rode yarn dev para iniciar o servidor.
+- Rodar o Postgres com docker: docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+- docker ps para ver se o Postgres está rodando no Docker.
+- Caso não esteja "docker start gostack_postgres" para rodar.
+- Criar banco knex_test.
+- Entre na pasta do projeto e rode o comando "npm install" para instalar as dependências.
+- Rode npx knex migrate:up para executar as migrations;
+- Rode npx knex seed:run para executar as seeds e gerar dados;
+- Rode npm start para iniciar o servidor.
 - Para testar a API acesse localhost:3333.
 
 ## 👩🏿‍💻 Rotas
