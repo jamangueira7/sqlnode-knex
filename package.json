@@ -1,0 +1,20 @@
+{
+  "name": "sqlnode-knex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamangueira7/sqlnode-knex.git"
+  },
+  "keywords": [],
+  "author": "João Mangueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamangueira7/sqlnode-knex/issues"
+  },
+  "homepage": "https://github.com/jamangueira7/sqlnode-knex#readme"
+}
