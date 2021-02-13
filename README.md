@@ -53,6 +53,7 @@ Esse projeto foi feito com a aula da Rocketseat Masterclass #13 [link](https://w
 ## 👩🏿‍💻 Rotas
 
 - **`POST /users`**: Rota para cadastrar usuarios;
+
 Envio
 ```
 {
@@ -61,6 +62,7 @@ Envio
 ```
 
 - **`GET /users`**: Rota para listar usuarios;
+
 Retorno
 ```
 [
@@ -80,6 +82,7 @@ Retorno
 ```
 
 - **`PUT /users/:userId`**: Rota para alterar usuarios;
+
 Envio
 ```
 {
