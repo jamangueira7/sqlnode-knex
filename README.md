@@ -33,9 +33,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto que cadastra usuario, tecnologias do usuario e endreços do ususarios.
+Projeto NodeJS que cadastra usuarios e projetos com Next no Postgres.
 
-Esse projeto foi feito com a aula da Rocketseat [link](https://www.youtube.com/watch?v=Fbu7z5dXcRs).
+Esse projeto foi feito com a aula da Rocketseat Masterclass #13 [link](https://www.youtube.com/watch?v=U7GjS3FuSkA).
 
 ## 🚀 Como Rodar
 
