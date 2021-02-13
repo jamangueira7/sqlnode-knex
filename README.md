@@ -56,19 +56,7 @@ Esse projeto foi feito com a aula da Rocketseat Masterclass #13 [link](https://w
 Envio
 ```
 {
-    "name" :"João Mangueira",
-    "email" :"joao@joao.com"
-}
-```
-
-Retorno
-```
-{
-    "id": 2,
-    "name": "João Mangueira",
-    "email": "joao@joao.com",
-    "updatedAt": "2021-02-12T22:03:36.431Z",
-    "createdAt": "2021-02-12T22:03:36.431Z"
+    "username": "Aline"
 }
 ```
 
@@ -77,12 +65,17 @@ Retorno
 ```
 [
     {
+        "id": 1,
+        "username": "João",
+        "created_at": "2021-02-13T22:58:47.046Z",
+        "updated_at": "2021-02-13T22:58:47.046Z"
+    },
+    {
         "id": 2,
-        "name": "João Mangueira",
-        "email": "joao@joao.com",
-        "createdAt": "2021-02-12T22:03:36.431Z",
-        "updatedAt": "2021-02-12T22:03:36.431Z"
-    }
+        "username": "Carlos",
+        "created_at": "2021-02-13T22:58:47.046Z",
+        "updated_at": "2021-02-13T22:58:47.046Z"
+    },
 ]
 ```
 
