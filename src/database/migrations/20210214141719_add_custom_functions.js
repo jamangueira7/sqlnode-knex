@@ -1,8 +1,16 @@
+const CUSTOM_FUNCTIONS = `
+   CREATE OR REPLACE FUNCTION on_update_timestamp()
+   RETURNS trigger AS $$
+   BEGIN
+        NEW.updated_at = now();
+        RETURN NEW;
+   END;
+   $$ language 'plpgsql';
+`;
 
-exports.up = function(knex) {
-  
-};
+const DROP_FUNCTIONS = `
+   DROP FUNCTION on_update_timestamp()
+`;
 
-exports.down = function(knex) {
-  
-};
+exports.up = async (knex) => knex.raw(CUSTOM_FUNCTIONS);
+exports.down = async (knex) => knex.raw(DROP_FUNCTIONS);
