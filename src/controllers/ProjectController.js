@@ -4,7 +4,9 @@ module.exports = {
     async index (req, res, next) {
         try {
             const { userId, page = 1 } = req.query;
-            const query = knex('projects');
+            const query = knex('projects')
+                .limit(5)
+                .offset((page -1) * 5 );
 
             if(userId) {
                 query
