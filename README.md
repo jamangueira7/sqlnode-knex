@@ -92,6 +92,64 @@ Envio
 
 - **`DELETE /users/:userId`**: Rota para listagem de endereços de usuarios;
 
+- **`GET /projects?userId`**: Rota para listar projeto de um usuarios;
+
+Retorno sem userID
+```
+[
+    {
+        "id": 1,
+        "title": "Meu projeto",
+        "user_id": 1,
+        "created_at": "2021-02-14T00:02:34.270Z",
+        "updated_at": "2021-02-14T00:02:34.270Z"
+    },
+    {
+        "id": 2,
+        "title": "Projeto 2",
+        "user_id": 2,
+        "created_at": "2021-02-14T00:07:26.311Z",
+        "updated_at": "2021-02-14T00:07:26.311Z"
+    },
+    {
+        "id": 3,
+        "title": "Projeto 3",
+        "user_id": 1,
+        "created_at": "2021-02-14T00:07:26.311Z",
+        "updated_at": "2021-02-14T00:07:26.311Z"
+    },
+    {
+        "id": 4,
+        "title": "Projeto 4",
+        "user_id": 3,
+        "created_at": "2021-02-14T00:07:26.311Z",
+        "updated_at": "2021-02-14T00:07:26.311Z"
+    }
+]
+```
+
+Retorno com userID
+```
+[
+    {
+        "id": 1,
+        "title": "Meu projeto",
+        "user_id": 1,
+        "created_at": "2021-02-14T00:02:34.270Z",
+        "updated_at": "2021-02-14T00:02:34.270Z",
+        "username": "João"
+    },
+    {
+        "id": 3,
+        "title": "Projeto 3",
+        "user_id": 1,
+        "created_at": "2021-02-14T00:07:26.311Z",
+        "updated_at": "2021-02-14T00:07:26.311Z",
+        "username": "João"
+    }
+]
+```
+
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
