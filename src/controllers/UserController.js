@@ -1,10 +1,16 @@
 const knex = require('../database');
 
 module.exports = {
-    async index (req, res) {
-        const users = await knex('users');
+    async index (req, res, next) {
+        try {
+            const users = await knex('users');
 
-        return res.json(users);
+            return res.json(users);
+        } catch (err) {
+
+            next(err);
+        }
+
     },
 
     async create (req, res, next) {
