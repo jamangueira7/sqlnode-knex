@@ -15,6 +15,10 @@ module.exports = {
                     .select('projects.*', 'users.username');
             }
 
+            const [count] = await knex('projects').count();
+
+            res.header('X-Total-Count', count["count"]);
+
             const projects = await query;
 
             return res.json(projects);
