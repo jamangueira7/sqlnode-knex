@@ -92,7 +92,7 @@ Envio
 
 - **`DELETE /users/:userId`**: Rota para listagem de endereços de usuarios;
 
-- **`GET /projects?userId`**: Rota para listar projeto de um usuarios;
+- **`GET /projects?userId&page`**: Rota para listar projeto de um usuarios. O parametro page controla a paginação;
 
 Retorno sem userID
 ```
@@ -148,6 +148,7 @@ Retorno com userID
         "username": "João"
     }
 ]
+```
 ```
 
 ## 🤔 Como contribuir
